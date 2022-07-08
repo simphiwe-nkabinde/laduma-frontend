@@ -1,6 +1,10 @@
-<div class="bg-primary container-fluid shadow-sm">
-    <div class="row"><a routerLink="{{previousPageUrl}}"><i class="bi fs-1 bi-chevron-left text-light"></i></a></div>
-    <div class="row text-light justify-content-center align-items-center text-center">
-        <p class="display-1 my-3">{{title}}</p>
+<div class="row bg-primary text-light justify-content-center align-items-center">
+    <div class="col text-center p-3">
+        <div class="position-relative d-flex justify-content-center">
+            <i  onclick="history.back()" class="position-absolute start-0 ps-2 bi fs-1 bi-chevron-left text-light"></i>
+            <p class="fs-1 m-0">
+                {{title}}
+            </p>
+        </div>
     </div>
 </div>
