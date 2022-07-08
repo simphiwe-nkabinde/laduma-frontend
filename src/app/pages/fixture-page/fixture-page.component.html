@@ -1,0 +1,20 @@
+<div>
+    <section class="bg-primary container-fluid shadow-sm">
+        <div class="row"><i class="bi fs-1 bi-chevron-left text-light"></i></div>
+        <div class="row text-light justify-content-center align-items-center text-center">
+            <p class="display-1 my-3">Fixtures</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="alert-secondary p-2">
+            Friday 08 June
+        </div>
+        <div class="mx-1" *ngFor="let match of matches">
+            <div class="text-center fs-2">
+                <a routerLink="3" class="fw-light text-decoration-none text-dark">{{match}}</a>
+            </div>
+            <hr>
+        </div>
+    </section>
+</div>
