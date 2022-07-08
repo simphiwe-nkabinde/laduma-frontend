@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatchPageComponent } from './pages/match-page/match-page.component';
 import { TabMenuComponent } from './components/tab-menu/tab-menu.component';
+import { FixturePageComponent } from './pages/fixture-page/fixture-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MatchPageComponent,
-    TabMenuComponent
+    TabMenuComponent,
+    FixturePageComponent
   ],
   imports: [
     BrowserModule,
