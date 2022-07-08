@@ -1,0 +1,22 @@
+.title{
+    font-family: Montserrat, sans-serif;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.form-control {
+    border-radius: 0;
+    border: initial;
+    border-bottom: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.log-btn{
+    box-shadow: 0 0 5px #0d6efd;
+}
