@@ -2,9 +2,9 @@
     <section class="bg-primary container-fluid shadow-sm">
         <div class="row"><i class="bi fs-1 bi-chevron-left text-light"></i></div>
         <div class="row text-light fs-2 align-items-center">
-            <p class="col-5 text-center">Mamelodi Sundowns</p>
+            <p class="col-5 text-center">{{homeTeam}}</p>
             <p class="col small">4 : 1</p>
-            <p class="col-5 text-center">Orlando Pirates</p>
+            <p class="col-5 text-center">{{awayTeam}}</p>
         </div>
     </section>
 
@@ -20,7 +20,7 @@
         <i class="bi bi-chevron-left fs-1"></i>
         <div class="text-center">
             <p class="small text-muted mt-0 mb-1">Home</p>
-            <p class="m-0">Mamelodi Sundowns</p>
+            <p class="m-0">{{homeTeam}}</p>
         </div>
         <i class="bi bi-chevron-right fs-1"></i>
     </div>
@@ -36,10 +36,10 @@
     <section class="">
         <h4 class="text-muted fs-1 text-center fw-light">Players</h4>
 
-        <div class="mx-4" *ngFor="let player of players">
+        <div class="mx-4" *ngFor="let player of homePlayers">
             <div class="d-flex fs-3">
                 <i class="bi bi-person-fill"></i>
-                <a href="#" class="ms-2 fw-light text-decoration-none">{{player}}</a>
+                <a href="#" class="ms-2 fw-light text-decoration-none">{{player['Player_Name']}}</a>
             </div>
             <hr>
         </div>
