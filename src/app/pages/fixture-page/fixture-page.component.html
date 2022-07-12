@@ -12,7 +12,7 @@
         </div>
         <div class="mx-1" *ngFor="let match of matches">
             <div class="text-center fs-2">
-                <a routerLink="3" class="fw-light text-decoration-none text-dark">{{match}}</a>
+                <a routerLink="{{match['Match_ID']}}" class="fw-light text-decoration-none text-dark">{{match['Game']}}</a>
             </div>
             <hr>
         </div>
