@@ -1,39 +1,41 @@
-<app-header title="Welcome Back"></app-header>
+<div class="container-fluid">
+    <app-header title="Welcome Back"></app-header>
 
-<div class="row justify-content-center mt-4">
-    <div class="col-md-6 p-3">
-        <form class="shadow rounded">
-            <div class="header p-3 border-bottom border-dark border-1 text-center d-flex justify-content-center align-items-center">
-                <h1 class="m-0 title"> Login </h1>
-            </div>
-            
-            <div class="row flex-column justify-content-center p-3">
-                <div class="col p-3">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" placeholder="Username" id="username">
-                        <label for="username">Username</label>
+    <div class="row justify-content-center mt-4" style="margin-bottom: 5rem;">
+        <div class="col-md-6 p-1">
+            <form class="shadow rounded">
+                <div class="header p-3 border-bottom border-dark border-1 text-center d-flex justify-content-center align-items-center">
+                    <h1 class="m-0 title"> Login </h1>
+                </div>
+                
+                <div class="row flex-column justify-content-center p-3">
+                    <div class="col p-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="Username" id="username">
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="Password" id="pwd">
+                            <label for="pwd">Password</label>
+                        </div>
+                    </div>
+                    <div class="col ps-3">
+                        <div class="forgot-pwd-cont">
+                            <a routerLink="#">Forgot Password</a>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <button class="btn btn-primary w-100 fs-5 rounded-pill title log-btn">
+                            Login
+                        </button>
+                    </div>
+                    <div class="col pt-3 text-center">
+                        <p>Not a member? <a routerLink="#">Signup</a></p>
                     </div>
                 </div>
-                <div class="col p-3">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" placeholder="Password" id="pwd">
-                        <label for="pwd">Password</label>
-                    </div>
-                </div>
-                <div class="col ps-3">
-                    <div class="forgot-pwd-cont">
-                        <a routerLink="#">Forgot Password</a>
-                    </div>
-                </div>
-                <div class="col p-3">
-                    <button class="btn btn-primary w-100 fs-5 rounded-pill title log-btn">
-                        Login
-                    </button>
-                </div>
-                <div class="col pt-3 text-center">
-                    <p>Not a member? <a routerLink="#">Signup</a></p>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
