@@ -1,6 +1,8 @@
 <div>
     <section class="bg-primary container-fluid shadow-sm">
-        <div class="row"><i class="bi fs-1 bi-chevron-left text-light"></i></div>
+        <div class="row">
+            <a routerLink="/match"><i class="bi fs-1 bi-chevron-left text-light"></i></a>
+        </div>
         <div class="row text-light fs-2 align-items-center">
             <p class="col-5 text-center">{{match.getHomeTeam()}}</p>
             <p class="col small">{{match.getHomeScore()}}:{{match.getAwayScore()}}</p>
