@@ -4,6 +4,9 @@ import { FixturePageComponent } from './pages/fixture-page/fixture-page.componen
 import { MatchPageComponent } from './pages/match-page/match-page.component';
 
 const routes: Routes = [
+  {
+    path: '', redirectTo: 'match', pathMatch: 'full'
+  },
   { path: 'match', component: FixturePageComponent},
   { path: 'match/:id', component: MatchPageComponent}
 ];
