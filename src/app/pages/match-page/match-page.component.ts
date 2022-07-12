@@ -13,7 +13,8 @@ export class MatchPageComponent implements OnInit {
 
   match: any;
   showAwayTeam: boolean =  false;
-  showHomeTeam: boolean = true
+  showHomeTeam: boolean = true;
+  loaded: boolean = false;
 
   constructor(
     private matchService: MatchService,
@@ -21,11 +22,13 @@ export class MatchPageComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    this.loaded =  false;
     let matchId = this.route.snapshot.paramMap.get('id');
     this.matchService.getAll()
     .subscribe(res => {
-      let allMatchEvents = res.data
-      this.match = new Match(allMatchEvents, String(matchId))
+      let allMatchEvents = res.data;
+      this.match = new Match(allMatchEvents, String(matchId));
+      this.loaded = true
     }, err => {
       console.log(err);
     })
